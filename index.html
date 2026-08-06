@@ -26,7 +26,16 @@
             display: flex;
             align-items: center;
             gap: 28px;
-            margin-bottom: 40px;
+            margin-bottom: 28px;
+        }
+
+        .intro p {
+            margin: 0 0 14px 0;
+        }
+
+        .princeton {
+            color: #E77500;
+            font-weight: bold;
         }
 
         header img {
@@ -149,6 +158,20 @@
         </div>
     </header>
 
+    <section class="intro">
+        <p>
+            Hi, I&rsquo;m Jasin &mdash; a senior at <span class="princeton">Princeton</span> studying
+            applied math and computer science. I evaluate <strong>how multimodal models behave</strong> &mdash;
+            probing where they fail, why, and how their failures <strong>diverge from human ones</strong>.
+            Every paper below is <strong>first-(co-)authored</strong>.
+        </p>
+        <p>
+            Along the way, I&rsquo;ve interned on the <strong>Query Optimization team at Teradata</strong> and
+            as an <strong>ML researcher at QCRI</strong> in Doha. When I&rsquo;m not stress-testing models,
+            I&rsquo;m probably constructing crosswords.
+        </p>
+    </section>
+
     <section>
         <h2>Papers</h2>
 
@@ -205,27 +228,13 @@
             </div>
         </div>
 
-        <div class="paper" id="adam">
+        <div class="paper">
             <img src="images/ADAM.png" alt="ADAM figure">
             <div>
                 <div class="paper-title">ADAM: A Diverse Archive of Mankind for Evaluating and Enhancing LLMs in Biographical Reasoning</div>
                 <div class="paper-venue">arXiv preprint, 2025</div>
                 <div class="paper-links"><a href="https://arxiv.org/abs/2509.22991">arXiv</a></div>
             </div>
-        </div>
-    </section>
-
-    <section>
-        <h2>Experience</h2>
-
-        <div class="item">
-            Incoming Software Engineer Intern, Teradata
-            <div class="item-meta">San Diego, CA · 2026</div>
-        </div>
-
-        <div class="item">
-            Machine Learning Researcher, Qatar Computing Research Institute
-            <div class="item-meta">Doha, Qatar · 2025 · see <a href="#adam">ADAM</a></div>
         </div>
     </section>
 
