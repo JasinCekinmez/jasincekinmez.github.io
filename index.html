@@ -123,18 +123,29 @@
         }
 
         .paper-authors {
-            font-size: 14px;
-            color: #6c757d;
-        }
-
-        .paper-authors .me {
-            font-weight: 500;
+            font-size: 15px;
             color: #212529;
         }
 
-        .paper-venue {
-            font-size: 14px;
+        .paper-authors .me {
+            text-decoration: underline;
+            text-underline-offset: 2px;
+        }
+
+        .paper-authors sup {
+            font-size: 11px;
+        }
+
+        .more-toggle {
             color: #6c757d;
+            cursor: pointer;
+            border-bottom: 1px dashed #adb5bd;
+        }
+
+        .paper-venue {
+            font-size: 15px;
+            color: #212529;
+            font-style: italic;
             margin-top: 2px;
         }
 
@@ -237,8 +248,8 @@
             <img src="images/OccludeBench.png" alt="OccludeBench figure">
             <div>
                 <div class="paper-title">OccludeBench: Can VLMs See the Hint?</div>
-                <div class="paper-authors"><span class="me">Jasin Cekinmez</span>*, Addison J. Wu*, Ryo Mitsuhashi*, Linrong Cai, Xingyu Fu, Zhuang Liu</div>
-                <div class="paper-venue">CVPR CViW 2026</div>
+                <div class="paper-authors"><span class="me">Jasin Cekinmez</span><sup>*</sup>, Addison J. Wu<sup>*</sup>, Ryo Mitsuhashi<sup>*</sup>, Linrong Cai, Xingyu Fu, and Zhuang Liu</div>
+                <div class="paper-venue">CViW @ CVPR 2026</div>
                 <div class="paper-links"><a href="https://drive.google.com/file/d/19sBNJD5cmSbnMEyazq8UX61y2a6KWOIx/view?usp=sharing">PDF</a></div>
             </div>
         </div>
@@ -247,8 +258,8 @@
             <img src="images/Polysemy.png" alt="Polysemy figure">
             <div>
                 <div class="paper-title">Where Did the Ambiguity Go? Examining How Multimodal Models Interpret Polysemous Words</div>
-                <div class="paper-authors"><span class="me">Jasin Cekinmez</span>, Addison J. Wu, Raja Marjieh, Thomas L. Griffiths</div>
-                <div class="paper-venue">COLM Sci-FM 2026 · Oral</div>
+                <div class="paper-authors"><span class="me">Jasin Cekinmez</span>, Addison J. Wu, Raja Marjieh, and Thomas L. Griffiths</div>
+                <div class="paper-venue">Sci-FM @ COLM 2026 (Oral)</div>
                 <div class="paper-links"><a href="https://arxiv.org/abs/2608.00410">arXiv</a></div>
             </div>
         </div>
@@ -257,8 +268,8 @@
             <img src="images/Query_Timing.png" alt="Query timing figure">
             <div>
                 <div class="paper-title">Query Timing Produces Opposite Positional Biases Between LLMs and Humans</div>
-                <div class="paper-authors"><span class="me">Jasin Cekinmez</span>, Addison J. Wu, Thomas L. Griffiths</div>
-                <div class="paper-venue">ICLR ICBINB 2026 · Entropic Award</div>
+                <div class="paper-authors"><span class="me">Jasin Cekinmez</span>, Addison J. Wu, and Thomas L. Griffiths</div>
+                <div class="paper-venue">ICBINB @ ICLR 2026 (Entropic Award)</div>
                 <div class="paper-links"><a href="https://openreview.net/forum?id=IgMZ1qT7iR">OpenReview</a></div>
             </div>
         </div>
@@ -267,8 +278,8 @@
             <img src="images/Guess_the_unified_model.png" alt="Guess the Unified Model figure">
             <div>
                 <div class="paper-title">Guess the Unified Model: Domain and Linguistic Effects in Generated Images</div>
-                <div class="paper-authors"><span class="me">Jasin Cekinmez</span>, Ryo Mitsuhashi, Addison J. Wu, Yida Yin</div>
-                <div class="paper-venue">ICLR DATA-FM 2026</div>
+                <div class="paper-authors"><span class="me">Jasin Cekinmez</span>, Ryo Mitsuhashi, Addison J. Wu, and Yida Yin</div>
+                <div class="paper-venue">DATA-FM @ ICLR 2026</div>
                 <div class="paper-links"><a href="https://openreview.net/forum?id=QhXV6RDQ11">OpenReview</a></div>
             </div>
         </div>
@@ -277,7 +288,7 @@
             <img src="images/SportD.png" alt="SportD figure">
             <div>
                 <div class="paper-title">SportD: Can VLMs Physically Strategize?</div>
-                <div class="paper-authors"><span class="me">Jasin Cekinmez</span>, Addison J. Wu, Haotian Xia, Akshaya Bharadhwaj, Anay Putty, Anirudh Ravishankar, Jaewoong Lee, Jinglin Xiao, Kyumin Andrew Shim, Mishika Ahuja, Nisarga Patil, Leo Liu, Zhuohan Liu, Weining Shen</div>
+                <div class="paper-authors"><span class="me">Jasin Cekinmez</span>, Addison J. Wu, Haotian Xia, Akshaya Bharadhwaj, <span class="more-toggle" onclick="this.style.display='none';this.nextElementSibling.style.display='inline'">and 10 more authors</span><span style="display:none">Anay Putty, Anirudh Ravishankar, Jaewoong Lee, Jinglin Xiao, Kyumin Andrew Shim, Mishika Ahuja, Nisarga Patil, Leo Liu, Zhuohan Liu, and Weining Shen</span></div>
                 <div class="paper-venue">arXiv preprint, 2026</div>
                 <div class="paper-links"><a href="https://arxiv.org/abs/2607.14616">arXiv</a></div>
             </div>
@@ -295,7 +306,7 @@
             <img src="images/ADAM.png" alt="ADAM figure">
             <div>
                 <div class="paper-title">ADAM: A Diverse Archive of Mankind for Evaluating and Enhancing LLMs in Biographical Reasoning</div>
-                <div class="paper-authors"><span class="me">Jasin Cekinmez</span>, Omid Ghahroodi, Saad Fowad Chandle, Dhiman Gupta, Ehsaneddin Asgari</div>
+                <div class="paper-authors"><span class="me">Jasin Cekinmez</span>, Omid Ghahroodi, Saad Fowad Chandle, Dhiman Gupta, and Ehsaneddin Asgari</div>
                 <div class="paper-venue">arXiv preprint, 2025</div>
                 <div class="paper-links"><a href="https://arxiv.org/abs/2509.22991">arXiv</a></div>
             </div>
