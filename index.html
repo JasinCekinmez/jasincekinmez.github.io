@@ -42,16 +42,21 @@
             margin: 0 0 14px 0;
         }
 
+        .header-text p:last-child {
+            margin-bottom: 0;
+        }
+
         .princeton {
             color: #E77500;
             font-weight: bold;
         }
 
         header img {
-            width: 185px;
+            width: 250px;
             max-width: 100%;
+            align-self: stretch;
+            object-fit: cover;
             border-radius: 6px;
-            margin-top: 6px;
         }
 
         h1 {
@@ -61,17 +66,14 @@
         }
 
         .contact-row {
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            gap: 14px;
             margin: 8px 0 20px 0;
         }
 
         .social {
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 14px;
+            margin-top: 10px;
         }
 
         .social a {
@@ -156,7 +158,8 @@
             }
             header img {
                 width: 150px;
-                margin-top: 0;
+                align-self: flex-start;
+                object-fit: contain;
             }
             h1 {
                 font-size: 28px;
