@@ -29,13 +29,16 @@
 
         header {
             display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 28px;
-            margin-bottom: 28px;
+            align-items: flex-start;
+            gap: 36px;
+            margin-bottom: 8px;
         }
 
-        .intro p {
+        .header-text {
+            flex: 1;
+        }
+
+        .header-text p {
             margin: 0 0 14px 0;
         }
 
@@ -45,27 +48,30 @@
         }
 
         header img {
-            width: 150px;
+            width: 185px;
             max-width: 100%;
-            border-radius: 4px;
+            border-radius: 6px;
+            margin-top: 6px;
         }
 
         h1 {
             font-size: 32px;
             font-weight: 500;
-            margin: 0 0 6px 0;
+            margin: 0;
         }
 
-        .subtitle {
-            color: #212529;
-            font-size: 17px;
-            margin: 2px 0;
+        .contact-row {
+            display: flex;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 14px;
+            margin: 8px 0 20px 0;
         }
 
         .social {
             display: flex;
-            gap: 18px;
-            margin-top: 16px;
+            align-items: center;
+            gap: 12px;
         }
 
         .social a {
@@ -78,8 +84,8 @@
         }
 
         .social svg {
-            width: 26px;
-            height: 26px;
+            width: 20px;
+            height: 20px;
             fill: currentColor;
         }
 
@@ -144,12 +150,13 @@
                 margin: 32px auto;
             }
             header {
-                flex-direction: column;
+                flex-direction: column-reverse;
                 align-items: flex-start;
                 gap: 18px;
             }
             header img {
-                width: 130px;
+                width: 150px;
+                margin-top: 0;
             }
             h1 {
                 font-size: 28px;
@@ -171,10 +178,11 @@
 <div class="container">
 
     <header>
-        <div>
+        <div class="header-text">
             <h1>Jasin Cekinmez</h1>
-            <div class="subtitle"><a href="mailto:jasincekinmez@princeton.edu">jasincekinmez@princeton.edu</a></div>
-            <div class="social">
+            <div class="contact-row">
+                <a href="mailto:jasincekinmez@princeton.edu">jasincekinmez@princeton.edu</a>
+                <div class="social">
                 <!-- TODO: replace with your Google Scholar profile URL -->
                 <a href="https://scholar.google.com/" aria-label="Google Scholar" title="Google Scholar">
                     <svg viewBox="0 0 24 24" role="img"><path d="M5.242 13.769 0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.749-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
@@ -189,24 +197,22 @@
                 <a href="https://x.com/" aria-label="X" title="X">
                     <svg viewBox="0 0 24 24" role="img"><path d="M18.901 1.153h3.68l-8.04 9.19L24 22.846h-7.406l-5.8-7.584-6.638 7.584H.474l8.6-9.83L0 1.154h7.594l5.243 6.932ZM17.61 20.644h2.039L6.486 3.24H4.298Z"/></svg>
                 </a>
+                </div>
             </div>
+            <p>
+                Hi, I&rsquo;m Jasin, a senior at <span class="princeton">Princeton</span> studying
+                applied math and computer science. I evaluate how multimodal models behave
+                probing where they fail, why, and how their failures <strong style="color: red;">diverge from human ones</strong>.
+                Every paper below is first (co-) authored.
+            </p>
+            <p>
+                Along the way, I&rsquo;ve interned on the Query Optimization team at Teradata and
+                as an ML researcher at QCRI. When I&rsquo;m not stress-testing models,
+                I&rsquo;m probably constructing crosswords 🧩 or writing data articles.
+            </p>
         </div>
         <img src="images/profile.jpg" alt="Jasin Cekinmez">
     </header>
-
-    <section class="intro">
-        <p>
-            Hi, I&rsquo;m Jasin, a senior at <span class="princeton">Princeton</span> studying
-            applied math and computer science. I evaluate how multimodal models behave
-            probing where they fail, why, and how their failures <strong style="color: red;">diverge from human ones</strong>.
-            Every paper below is first (co-) authored.
-        </p>
-        <p>
-            Along the way, I&rsquo;ve interned on the Query Optimization team at Teradata and
-            as an ML researcher at QCRI. When I&rsquo;m not stress-testing models,
-            I&rsquo;m probably constructing crosswords 🧩 or writing data articles.
-        </p>
-    </section>
 
     <section>
         <h2>Papers</h2>
