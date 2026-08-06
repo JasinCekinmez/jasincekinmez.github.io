@@ -4,77 +4,104 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jasin Cekinmez</title>
-
-    <!-- Academic-style font -->
-    <link href="https://fonts.googleapis.com/css2?family=Georgia&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+    <meta name="description" content="Jasin Cekinmez — Princeton University, Applied Math &amp; CS. Research on vision-language models and LLM evaluation.">
 
     <style>
         body {
-            font-family: Georgia, "Times New Roman", serif;
+            font-family: Charter, "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
             margin: 0;
-            background-color: #ffffff;
-            color: #222;
-            line-height: 1.6;
+            background: #ffffff;
+            color: #1a1a1a;
+            line-height: 1.55;
+            font-size: 17px;
         }
 
         .container {
-            max-width: 800px;
-            margin: 40px auto;
-            padding: 0 20px;
+            max-width: 760px;
+            margin: 60px auto;
+            padding: 0 24px;
         }
 
         header {
             display: flex;
             align-items: center;
-            gap: 25px;
+            gap: 28px;
             margin-bottom: 40px;
         }
 
         header img {
-            width: 200px;
+            width: 150px;
             max-width: 100%;
-            border-radius: 5px;
+            border-radius: 4px;
         }
 
         h1 {
-            font-size: 32px;   
-            font-weight: 700;
-            margin: 0;
-}
+            font-size: 26px;
+            font-weight: normal;
+            margin: 0 0 6px 0;
+        }
 
         .subtitle {
-            font-family: Inter, sans-serif;
-            color: #555;
-            font-size: 20px;
+            color: #444;
+            margin: 2px 0;
+        }
+
+        .links {
+            margin-top: 8px;
         }
 
         h2 {
-            font-size: 18px;
-            margin-top: 40px;
-            border-bottom: 1px solid #ddd;
-            padding-bottom: 5px;
+            font-size: 16px;
+            font-weight: normal;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: #777;
+            margin: 44px 0 18px 0;
+            border-bottom: 1px solid #e5e5e5;
+            padding-bottom: 6px;
         }
 
-        p {
-            margin: 10px 0;
+        .paper {
+            display: flex;
+            gap: 20px;
+            margin: 0 0 26px 0;
+            align-items: flex-start;
         }
 
-        .item {
-            margin: 15px 0;
+        .paper img {
+            width: 190px;
+            flex-shrink: 0;
+            border: 1px solid #ddd;
+            border-radius: 3px;
         }
 
-        .item-title {
+        .paper-title {
             font-weight: bold;
         }
 
+        .paper-venue {
+            font-size: 15px;
+            color: #555;
+            font-style: italic;
+            margin-top: 2px;
+        }
+
+        .paper-links {
+            font-size: 15px;
+            margin-top: 4px;
+        }
+
+        .item {
+            margin: 0 0 16px 0;
+        }
+
         .item-meta {
-            font-family: Inter, sans-serif;
-            font-size: 13px;
-            color: #666;
+            font-size: 15px;
+            color: #777;
         }
 
         a {
-            color: #1a5fb4;
+            color: #2a4d8f;
             text-decoration: none;
         }
 
@@ -82,35 +109,27 @@
             text-decoration: underline;
         }
 
-        .links {
-            margin-top: 10px;
-            font-family: Inter, sans-serif;
-            font-size: 18px;
+        @media (max-width: 640px) {
+            .container {
+                margin: 32px auto;
+            }
+            header {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 18px;
+            }
+            header img {
+                width: 130px;
+            }
+            .paper {
+                flex-direction: column;
+                gap: 10px;
+            }
+            .paper img {
+                width: 100%;
+                max-width: 320px;
+            }
         }
-        @media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        align-items: flex-start;
-    }
-
-    header img {
-        width: 100%;
-        max-width: 300px;
-    }
-
-    .container {
-        padding: 0 16px;
-    }
-
-    h1 {
-        font-size: 28px;
-    }
-
-    .subtitle,
-    .links {
-        font-size: 16px;
-    }
-}
     </style>
 </head>
 
@@ -119,190 +138,123 @@
 <div class="container">
 
     <header>
-        <img src="IMG_0564.jpg" alt="Profile Picture">
+        <img src="images/profile.jpg" alt="Jasin Cekinmez">
         <div>
             <h1>Jasin Cekinmez</h1>
-            <div class="subtitle">
-                Princeton University · Applied Math & CS
-            </div>
-            
-            <div class="subtitle">
-                Email: jasincekinmez@princeton.edu
-            </div>
+            <div class="subtitle">Princeton University · Applied Math &amp; CS</div>
+            <div class="subtitle">jasincekinmez@princeton.edu</div>
             <div class="links">
-                <a href="https://www.linkedin.com/in/jasincekinmez/">LinkedIn</a> 
+                <a href="https://www.linkedin.com/in/jasincekinmez/">LinkedIn</a>
             </div>
         </div>
     </header>
 
     <section>
-        <h2>About</h2>
-        <p>
-            I am an undergraduate at Princeton University with interests in machine learning,
-            multimodal reasoning, and data-centric AI. My work focuses on evaluating model
-            behavior, understanding reasoning limitations, and building robust benchmarks.
-        </p>
+        <h2>Papers</h2>
+
+        <div class="paper">
+            <img src="images/OccludeBench.png" alt="OccludeBench figure">
+            <div>
+                <div class="paper-title">OccludeBench: Can VLMs See the Hint?</div>
+                <div class="paper-venue">CVPR CViW 2026</div>
+                <div class="paper-links"><a href="https://drive.google.com/file/d/19sBNJD5cmSbnMEyazq8UX61y2a6KWOIx/view?usp=sharing">PDF</a></div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <img src="images/Polysemy.png" alt="Polysemy figure">
+            <div>
+                <div class="paper-title">Where Did the Ambiguity Go? Examining How Multimodal Models Interpret Polysemous Words</div>
+                <div class="paper-venue">COLM Sci-FM 2026 · Oral</div>
+                <div class="paper-links"><a href="https://arxiv.org/abs/2608.00410">arXiv</a></div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <img src="images/Query_Timing.png" alt="Query timing figure">
+            <div>
+                <div class="paper-title">Query Timing Produces Opposite Positional Biases Between LLMs and Humans</div>
+                <div class="paper-venue">ICLR ICBINB 2026 · Entropic Award</div>
+                <div class="paper-links"><a href="https://openreview.net/forum?id=IgMZ1qT7iR">OpenReview</a></div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <img src="images/Guess_the_unified_model.png" alt="Guess the Unified Model figure">
+            <div>
+                <div class="paper-title">Guess the Unified Model: Domain and Linguistic Effects in Generated Images</div>
+                <div class="paper-venue">ICLR DATA-FM 2026</div>
+                <div class="paper-links"><a href="https://openreview.net/forum?id=QhXV6RDQ11">OpenReview</a></div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <img src="images/SportD.png" alt="SportD figure">
+            <div>
+                <div class="paper-title">SportD: Can VLMs Physically Strategize?</div>
+                <div class="paper-venue">arXiv preprint, 2026</div>
+                <div class="paper-links"><a href="https://arxiv.org/abs/2607.14616">arXiv</a></div>
+            </div>
+        </div>
+
+        <div class="paper">
+            <img src="images/RLVR.png" alt="RLVR figure">
+            <div>
+                <div class="paper-title">Quantifying Empirical Compute-Supervision Tradeoffs in RLVR</div>
+                <div class="paper-venue">Under review</div>
+            </div>
+        </div>
+
+        <div class="paper" id="adam">
+            <img src="images/ADAM.png" alt="ADAM figure">
+            <div>
+                <div class="paper-title">ADAM: A Diverse Archive of Mankind for Evaluating and Enhancing LLMs in Biographical Reasoning</div>
+                <div class="paper-venue">arXiv preprint, 2025</div>
+                <div class="paper-links"><a href="https://arxiv.org/abs/2509.22991">arXiv</a></div>
+            </div>
+        </div>
     </section>
-
-
 
     <section>
         <h2>Experience</h2>
 
-
-
         <div class="item">
-            <div class="item-title">Incoming Software Engineer Intern</div>
-            <div class="item-meta">Teradata · 2026 · San Diego, CA</div>
-            <p>
-                Stay tuned...
-            </p>
+            Incoming Software Engineer Intern, Teradata
+            <div class="item-meta">San Diego, CA · 2026</div>
         </div>
 
         <div class="item">
-            <div class="item-title">Machine Learning Researcher</div>
-            <div class="item-meta">Qatar Computing Research Institute  · 2025 · Doha, Qatar</div>
-            <p>
-                See <a href="#adam">ADAM</a>
-            </p>
+            Machine Learning Researcher, Qatar Computing Research Institute
+            <div class="item-meta">Doha, Qatar · 2025 · see <a href="#adam">ADAM</a></div>
         </div>
-
     </section>
-
-
 
     <section>
-        <h2>Publications</h2>
+        <h2>Writing</h2>
 
         <div class="item">
-            <div class="item-title">
-                In Plain Sight, Yet Missed: Do MLLMs struggle to extract the information needed to answer the question?
-            </div>
-            <div class="item-meta">
-                Jasin Cekinmez*, Addison J. Wu*, Ryo Mitsuhashi*, Linrong Cai, Xingyu Fu, Zhuang Liu · CVPR CViW 2026 
-            </div>
-            <p>
-                Investigated whether vision-language models actually use the specific visual clues needed to answer a question, rather than relying on surrounding context or learned patterns. Showed that current models struggle far more than humans when tasks require extracting exact information from subtle cues such as shadows and reflections.        </div>
-
-        <div class="item">
-            <div class="item-title">
-                Query Timing Produces Opposite Positional Biases Between LLMs and Humans
-            </div>
-            <div class="item-meta">
-                Jasin Cekinmez*, Addison J. Wu*, Thomas L. Griffiths · ICLR ICBINB 2026 · <b> Entropic Award </b>
-            </div>
-            <p>
-                Investigated how response structure affects positional bias in large language models,
-                revealing systematic differences between human and model reasoning.
-            </p>
-            <a href="https://openreview.net/forum?id=IgMZ1qT7iR&referrer=%5Bthe%20profile%20of%20Thomas%20L.%20Griffiths%5D(%2Fprofile%3Fid%3D~Thomas_L._Griffiths1)">Paper</a>
+            <a href="https://www.dailyprincetonian.com/article/2025/04/princeton-data-research-thesis-analysis-sentiment">We analyzed the past decade of senior theses. Here are six takeaways.</a>
+            <div class="item-meta">The Daily Princetonian · April 2025</div>
         </div>
 
         <div class="item">
-            <div class="item-title">
-                Guess the unified model: Domain and Linguistic Effects in Generated Images
-            </div>
-            <div class="item-meta">
-                Jasin Cekinmez*, Ryo Mitsuhashi*, Yida Yin · ICLR DATA-FM 2026
-            </div>
-            <p>
-                Investigated model-of-origin attribution in unified model-generated images, demonstrating near-perfect separability across models.
-                Showed that attribution remains robust to corruptions and domain shifts, revealing consistent model-specific visual signatures.
-            </p>
-            <a href="https://openreview.net/forum?id=QhXV6RDQ11">Paper</a>
+            <a href="https://www.dailyprincetonian.com/article/2024/10/princeton-data-declaration-day-class-of-2024-2025-2026-survey-analysis">How many Princeton students are &lsquo;weeded out&rsquo; from their major? We broke it down.</a>
+            <div class="item-meta">The Daily Princetonian · October 2024</div>
         </div>
-
-
-        <div class="item">
-            <div class="item-title">
-                Quantifying Empirical Compute-Supervision Tradeoffs in RLVR
-            </div>
-            <div class="item-meta">
-                Ryo Mitsuhashi*, Patrick Chen*, Isabelle Tseng*, Jasin Cekinmez*, Addison Wu* · Under Review 
-            </div>
-            <p>
-                Investigated whether additional reinforcement learning compute can compensate for imperfect automated feedback during language model training. Showed that scaling compute only partially offsets noisy supervision, with persistent performance gaps and stronger degradation from missing correct rewards than from rewarding incorrect ones.
-            </p>
-        </div>
-
-
-
-        <div class="item" id="adam">
-            <div class="item-title">
-                ADAM: A Diverse Archive of Mankind for Evaluating and Enhancing LLMs in Biographical Reasoning
-            </div>
-            <div class="item-meta">
-                Jasin Cekinmez*, Omid Ghahroodi*, Saad Fowad Chandle, Dhiman Gupta, Ehsaneddin Asgari · ArXiv
-            </div>
-            <p>
-                Introduced ADAM, a large-scale multilingual and multimodal framework for evaluating biographical reasoning in MLLMs.
-                Showed that retrieval via AdamRAG significantly improves accuracy, especially for lesser-known individuals, while highlighting persistent challenges tied to popularity and reasoning complexity.
-            </p>
-            <a href="https://arxiv.org/abs/2509.22991">Paper</a>
-        </div>
-
     </section>
-
-  
-    <section>
-        <h2>Projects</h2>
-    
-        <div class="project-item">
-            <div class="item-title">
-                We analyzed the past decade of senior theses. Here are six takeaways.
-            </div>
-            <div class="item-meta">
-                Nathan Beck and Jasin Cekinmez · Daily Princetonian April 28, 2025 
-            </div>
-            <p>
-                Analyzed over 9,000 Princeton University senior theses using NLP to track changes in length, readability, and content over a decade. 
-                Found that theses have become slightly shorter and more complex, with no clear evidence of increased AI-generated writing despite the rise of tools like ChatGPT.
-            </p>
-            <a href="https://www.dailyprincetonian.com/article/2025/04/princeton-data-research-thesis-analysis-sentiment">Article</a> 
-            <br>
-        </div>
-        <br>
-        <div class="project-item">
-            <div class="item-title">
-                How many Princeton students are ‘weeded out’ from their major? We broke it down.
-            </div>
-            <div class="item-meta">
-                Jasin Cekinmez and Iman Monfopa Kone · Daily Princetonian October 7, 2024
-            </div>
-            <p>
-                Analyzed major declaration patterns at Princeton University, showing that STEM fields, especially natural sciences and engineering, see significant drop-off from intended to declared majors.
-                Findings suggest early coursework and perceived difficulty drive switching, while social sciences tend to retain or even gain students over time.
-            </p>
-            <a href="https://www.dailyprincetonian.com/article/2024/10/princeton-data-declaration-day-class-of-2024-2025-2026-survey-analysis">Article</a>
-        </div>
-    
-    </section>
-
-
-
-
-
 
     <section>
         <h2>Puzzles</h2>
+
         <div class="item">
-            <div class="item-title">New York Times Crossword</div>
-            <div class="item-meta">July 16th, 2025</div>
-            <p>
-                Debut!
-            </p>
-            <a href="https://www.nytimes.com/2025/07/15/crosswords/daily-puzzle-2025-07-16.html">Puzzle</a>
+            <a href="https://www.nytimes.com/2025/07/15/crosswords/daily-puzzle-2025-07-16.html">New York Times Crossword</a>
+            <div class="item-meta">July 16, 2025 · debut</div>
         </div>
 
         <div class="item">
-            <div class="item-title">Daily Princetonian Crosswords</div>
-            <div class="item-meta"></div>
-            <p>
-                Led the associate director position and made 6 puzzles over my time there
-            </p>
-            <a href="https://www.dailyprincetonian.com/staff/jasin">Puzzles</a>
+            <a href="https://www.dailyprincetonian.com/staff/jasin">Daily Princetonian Crosswords</a>
+            <div class="item-meta">Associate Director · 6 puzzles</div>
         </div>
-
     </section>
 
 </div>
